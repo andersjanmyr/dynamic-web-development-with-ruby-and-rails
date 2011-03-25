@@ -6,7 +6,7 @@
 * Lightness
 * Glue
 
-!SLIDE code execute
+!SLIDE code execute small
 # Parallel Assignment
 
     @@@ruby
@@ -37,7 +37,7 @@
 
     result = "Hello #{kid} ##{1+3}"
 
-!SLIDE code
+!SLIDE code small
 # Here Documents
 
     @@@ruby
@@ -51,7 +51,7 @@
     SQL
 
 
-!SLIDE code
+!SLIDE code small
 # Higher Order Functions
 
     @@@ruby
@@ -65,15 +65,15 @@
     result
 
 
-!SLIDE code
+!SLIDE code small
 # Simple Commandline Access
 
     @@@ruby
     # Backticks invokes the command and returns the result as a string
     `ls`
-    # => "Scripts\nStylesheets\nbin\nget_destinations.scpt\nlib\nnibs\n"
+    # => "Scripts\nStylesheets\nbin\nlib\nnibs\n"
     `ls`.split
-    # => ["Scripts", "Stylesheets", "bin", "get_destinations.scpt", "lib", "nibs"]
+    # => ["Scripts", "Stylesheets", "bin",  "lib", "nibs"]
 
     # System invokes the command, prints the result to stdout, and return a boolean
     system('ls -l')
@@ -81,7 +81,6 @@
     drwxr-xr-x  3 andersjanmyr  admin    102 Aug 29  2009 Scripts
     drwxr-xr-x  3 andersjanmyr  admin    102 Aug 29  2009 Stylesheets
     drwxr-xr-x  5 andersjanmyr  admin    170 Aug 29  2009 bin
-    -rw-r--r--  1 andersjanmyr  admin  12312 Aug 29  2009 get_destinations.scpt
     drwxr-xr-x  3 andersjanmyr  admin    102 Aug 29  2009 lib
     drwxr-xr-x  3 andersjanmyr  admin    102 Aug 29  2009 nibs
     # => true
@@ -91,7 +90,7 @@
     # => false
 
 
-!SLIDE code
+!SLIDE code small
 # Open Classes
 
     @@@ruby
@@ -104,7 +103,7 @@
     result = "A tapir is beautiful".vowels
 
 
-!SLIDE code
+!SLIDE code small
 # Class Inheritance
 
     @@@ruby
@@ -124,7 +123,7 @@
 
     end
 
-!SLIDE code
+!SLIDE code small
 # Class Inheritance, cont.
 
     @@@ruby
@@ -141,7 +140,7 @@
     # => [#<Mammal:0x000001010fc218>, #<Mammal:0x000001010fc1c8>, #<Tapir:0x000001010fc1a0>]
 
 
-!SLIDE code
+!SLIDE code small
 # Meta Programming
 
     @@@ruby
@@ -168,7 +167,7 @@
     # => I'm sniffing glue!
 
 
-!SLIDE code
+!SLIDE code small
 # Method Missing
 
     @@@ruby
