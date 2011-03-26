@@ -133,11 +133,11 @@
     # Add some mammals and a tapir
     Mammal.mammals << Mammal.new << Mammal.new << Tapir.new
 
-    Tapir.all
-    # => [#<Tapir:0x000001010fc1a0>]
+    result = []
+    result << Tapir.all
+    result << Mammal.all
 
-    Mammal.all
-    # => [#<Mammal:0x000001010fc218>, #<Mammal:0x000001010fc1c8>, #<Tapir:0x000001010fc1a0>]
+    result
 
 
 !SLIDE code small
@@ -160,11 +160,11 @@
 
     @@@ruby
     t = Tapir.new
-    t.eat 'bananas'
-    # => I'm eating bananas!
+    result = []
+    result << t.eat('bananas')
 
-    t.sniff 'glue'
-    # => I'm sniffing glue!
+    result << t.sniff('glue')
+    result
 
 
 !SLIDE code small
@@ -192,18 +192,17 @@
 # Method Missing, cont.
 
     @@@ruby
+    result = []
+    
     prot = Prototype.new
-    prot.age
-    # => nil
+    result << prot.age
+    
     prot.age 14
-    # => 14
-    prot.age
-    # => 14
+    result << prot.age
+    
     prot.age= 16
-    # => 16
-    prot.age
-    # => 16
+    result << prot.age
 
-
+    result
 
 
