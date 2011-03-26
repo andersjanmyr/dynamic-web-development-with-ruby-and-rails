@@ -94,15 +94,6 @@
         # Look Ma, no fields
     end
 
-!SLIDE small
-# Model ActiveRecord
-
-    @@@ruby
-    class Person < ActiveRecord::Base
-      table_name :people
-      primary_key :id
-    end
-
 
 !SLIDE small
 # Model db/schema.rb
@@ -119,6 +110,41 @@
       end
 
     end
+
+!SLIDE small
+# Model ActiveRecord
+
+    @@@ruby
+    class DisqusPost < ActiveRecord::Base
+      belongs_to :disqus_thread
+      
+      def self.approved
+        where(:is_approved => true)
+      end
+
+      def self.latest(forum)
+        approved.joins(:disqus_thread)
+          .where('disqus_threads.forum' => forum)
+          .order('disqus_posts.disqussed_at DESC')
+      end
+
+      def self.latest_one(forum)
+        latest(forum).limit(1).try(:first)
+      end
+    end
+
+!SLIDE commandline 
+    $ rails console
+    > DisqusPost.latest(10).to_sql
+    SELECT "disqus_posts".* FROM "disqus_posts" INNER JOIN "disqus_threads" 
+        ON "disqus_threads"."id" = "disqus_posts"."thread_id"
+    WHERE "disqus_posts"."is_approved" = 't' AND 
+      "disqus_threads"."forum" = 10 
+    ORDER BY disqus_posts.disqussed_at DESC
+        > 
+    
+
+
 
 !SLIDE small
 # Model Mongoid
