@@ -30,3 +30,4 @@ DEPENDENCIES
   gli
   nokogiri
   showoff!
+  sinatra
