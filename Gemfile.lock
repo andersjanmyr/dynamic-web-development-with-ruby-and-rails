@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:andersjanmyr/showoff.git
-  revision: 830e15f9b939cf9d3fcc7b5021cbaf36b9dc7ffe
+  remote: git://github.com/andersjanmyr/showoff.git
+  revision: 39c180b4299d3de2ffd229d06e8a3a9e83529492
   specs:
     showoff (0.4.0)
       bluecloth
