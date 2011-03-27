@@ -1,3 +1,14 @@
+GIT
+  remote: git@github.com:andersjanmyr/showoff.git
+  revision: 830e15f9b939cf9d3fcc7b5021cbaf36b9dc7ffe
+  specs:
+    showoff (0.4.0)
+      bluecloth
+      gli (>= 1.2.5)
+      json
+      nokogiri
+      sinatra
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -6,12 +17,6 @@ GEM
     json (1.5.1)
     nokogiri (1.4.4)
     rack (1.2.2)
-    showoff (0.4.1)
-      bluecloth
-      gli (>= 1.2.5)
-      json
-      nokogiri
-      sinatra
     sinatra (1.2.1)
       rack (~> 1.1)
       tilt (< 2.0, >= 1.2.2)
@@ -24,4 +29,4 @@ DEPENDENCIES
   bluecloth
   gli
   nokogiri
-  showoff
+  showoff!
