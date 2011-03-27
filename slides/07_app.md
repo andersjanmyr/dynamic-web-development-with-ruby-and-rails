@@ -112,7 +112,7 @@
     end
 
 !SLIDE small
-# Model ActiveRecord
+# Model ActiveRelation
 
     @@@ruby
     class DisqusPost < ActiveRecord::Base
@@ -134,14 +134,15 @@
     end
 
 !SLIDE commandline 
+# ActiveRelation to_sql
     $ rails console
     > DisqusPost.latest(10).to_sql
-    SELECT "disqus_posts".* FROM "disqus_posts" INNER JOIN "disqus_threads" 
+    SELECT "disqus_posts".* FROM "disqus_posts"
+      INNER JOIN "disqus_threads"
         ON "disqus_threads"."id" = "disqus_posts"."thread_id"
     WHERE "disqus_posts"."is_approved" = 't' AND 
       "disqus_threads"."forum" = 10 
     ORDER BY disqus_posts.disqussed_at DESC
-        > 
     
 
 
