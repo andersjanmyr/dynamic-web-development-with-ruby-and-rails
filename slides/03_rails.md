@@ -6,8 +6,8 @@
 # Why Rails?
 
 * Productive
-* Fast feedback
 * Dynamic
+* Short Feedback Loop
 
 !SLIDE bullets
 # Convention over Configuration
