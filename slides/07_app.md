@@ -112,7 +112,7 @@
     end
 
 !SLIDE small
-# Model ActiveRelation
+# ActiveRelation
 
     @@@ruby
     class DisqusPost < ActiveRecord::Base
@@ -206,7 +206,7 @@
         #error_explanation
           %h2
             = pluralize(@person.errors.count, "error")
-            prohibited this person from being saved:
+            prohibited this person from being saved
           %ul
           - @person.errors.full_messages.each do |msg|
             %li= msg

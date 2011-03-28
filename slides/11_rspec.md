@@ -13,7 +13,7 @@
     expectation     == assertion
 
 !SLIDE small
-# A spec
+# A Spec
 
     @@@ruby
     require 'spec_helper'
@@ -24,7 +24,7 @@
 
 
 !SLIDE small
-# A spec with examples
+# A Spec with Examples
 
     @@@ruby
     describe 'A guest user' do
@@ -40,7 +40,7 @@
         end
 
 !SLIDE commandline incremental
-# Running the specs
+# Running the Specs
 
     $ rspec spec
     A guest user
@@ -76,13 +76,13 @@
 
 
 !SLIDE small
-# Error expectation
+# Error Expectation
 
     @@@ruby
     lambda { this_block }.should raise_error
 
 !SLIDE small
-# Change expectation
+# Change Expectation
 
     @@@ruby
     describe 'add ability to guest user' do

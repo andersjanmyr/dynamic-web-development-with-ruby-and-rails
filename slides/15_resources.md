@@ -2,22 +2,10 @@
 # Resources
 
 !SLIDE center
-# Ruby 5
-## http://ruby5.envylabs.com/
+# Rails Guides
+## http://guides.rubyonrails.org/
 
-![](../images/ruby5.png)
-
-!SLIDE center
-# Railscasts
-## http://railscasts.com/
-
-![](../images/railscasts.png)
-
-!SLIDE center
-# The Ruby Show
-## http://rubyshow.com
-
-![](../images/the-ruby-show.png)
+![](../images/rails_guides.png)
 
 !SLIDE center
 # RDoc Info
@@ -30,10 +18,22 @@
 ![](../images/ruby_toolbox.png)
 
 !SLIDE center
-# Rails Guides
-## http://guides.rubyonrails.org/
+# The Ruby Show
+## http://rubyshow.com
 
-![](../images/rails_guides.png)
+![](../images/the-ruby-show.png)
+
+!SLIDE center
+# Ruby 5
+## http://ruby5.envylabs.com/
+
+![](../images/ruby5.png)
+
+!SLIDE center
+# Railscasts
+## http://railscasts.com/
+
+![](../images/railscasts.png)
 
 !SLIDE center
 # Scaling Rails

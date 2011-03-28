@@ -11,7 +11,7 @@
       match "/people/:id" => 'people#show'
     end
 
-!SLIDE commandline
+!SLIDE commandline small
 # rake routes
 
     $ rake routes
@@ -22,14 +22,9 @@
 
     @@@ruby
     match "/people/:id"=>'people#show', :as => 'person'
-
+    
+    # Helper Methods
     = link_to "Person", person_path(@person)
-
-!SLIDE commandline
-# rake routes
-
-    $ rake routes
-    person  /people/:id(.:format) {:controller=>"people", :action=>"show"}
 
 
 !SLIDE small
@@ -37,7 +32,8 @@
 
     @@@ruby
     resources :people
-
+    
+    # Helper Methods
     = link_to "People", people_path
     = link_to "New Person", new_person_path
     = link_to "Show Person", person_path(@person)

@@ -7,7 +7,7 @@
 
 ## Presentation
 
-* http://dynamic-web-development-with-ruby-and-rails.heroku.com
+* http://web-development-with-rails.heroku.com
 
 
 !SLIDE
