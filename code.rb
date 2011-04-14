@@ -49,4 +49,3 @@ class Prototype
   end
 end
 
-
